@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: hsl(0, 100%, 74%) url(../img/bg-intro-mobile.png) no-repeat center center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 375px;
+    padding: 50px 20px;
+}
+
+.text {
+    display: block;
+}
+
+.text h1 {
+    width: 210px;
+    color: white;
+    padding-bottom: 15px;
+    margin: auto;
+}
+
+.text p {
+    color: white;
+    font-size: 1.05rem;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.days {
+    display: block;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.144);
+    padding: 15px 0px;
+    margin-bottom: 20px;
+}
+.days > p {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+}
+.formulario {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.144);
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: hsl(249, 10%, 26%);
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.formulario button:hover {
+    background-color: hsl(153, 53%, 66%);
+}
+
+.formulario .terms {
+    color: hsl(246, 25%, 77%);
+    font-size: 0.85rem;
+    text-align: center;
+}
+.terms a {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+    line-height: 2rem;
+}
+
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url(../img/bg-intro-desktop.png);
+    }
+
+    .container {
+        width: 950px;
+    }
+    
+    .text {
+        float: left;
+        width: 50%;
+
+    }
+
+    .text h1 {
+        margin: 0;
+        text-align: left;
+        padding-top: 140px;
+    }
+
+    .text p {
+        text-align: left;
+        padding-right: 50px;
+        font-size: .8rem;
+    }
+
+    .days {
+        float: right;
+        width: 50%;
+    }
+
+    .days > P {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .formulario {
+        float: right;
+        width: 50%;
+    }
+
+    .formulario input {
+        margin-bottom: 20px;
+    }
+
+    .formulario .terms {
+        font-size: 0.7rem;
+    }
+}
