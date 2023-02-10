@@ -117,6 +117,7 @@ body {
 }
 
 
+
 @media screen and (min-width: 992px) { /* Desktops */
     body {
         background: hsl(225, 100%, 94%) url(../img/pattern-background-desktop.svg) no-repeat top center /contain;
