@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile first */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    padding: 30px;
+}
+
+.card h1 {
+    font: 700 2rem 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    padding: 20px 0px;
+}
+.card p {
+    width: 250px;
+    font: 500 1rem 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 2rem;
+    padding-bottom: 20px;
+}
+.card .learn-more a {
+    display: inline-block;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.card .learn-more a {
+    font: 500 1rem 'Lexend Deca', sans-serif;
+    text-decoration: none;
+}
+.card .learn-more a:hover{
+    background-color: inherit;
+    color: white;
+}
+
+
+.card-sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0px 0px;
+}
+.card-sedans .learn-more a {
+    color: hsl(31, 77%, 52%);
+}
+
+.card-suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+.card-suvs .learn-more a {
+    color: hsl(184, 100%, 22%);
+}
+
+.card-luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 0px 10px 10px;
+}
+.card-luxury .learn-more a {
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+@media screen and (min-width: 992px) { /* Desktop */
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card p {
+        width: 211px;
+        font-size: 0.95rem;
+        line-height: 1.6rem;
+        padding-bottom: 70px;
+    }
+
+    .card-sedans {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .card-luxury {
+        border-radius: 0px 10px 10px 0px;
+    }
+}
