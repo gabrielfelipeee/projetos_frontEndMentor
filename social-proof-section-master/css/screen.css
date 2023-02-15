@@ -1,0 +1,84 @@
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../img/bg-pattern-top-desktop.svg), url(../img/bg-pattern-top-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom left;
+        background-size: 50%, 50%;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'text ratings'
+        'buyers buyers';
+        width: 1112px;
+    }
+
+    .text {
+        height: 50px;
+    }
+
+    .text {
+        display: grid;
+        grid-area: text;
+        margin: 0;
+        padding: 0;
+        grid-area: text;
+    }
+    .text h1 {
+        justify-self: start;
+        text-align: left;
+    }
+
+    .text p {
+        text-align: left;
+        width: 400px;
+    }
+
+    .ratings {
+        grid-area: ratings;
+        padding: 0;
+        margin: 0;
+    }
+    .ratings .reviews {
+        width: 400px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 12px 20px;
+    }
+    .ratings p {
+        padding: 0;
+    }
+    .ratings .report {
+        margin-left: 35px;
+    }
+    .ratings .best-tech {
+        margin-left: 70px;
+    }
+
+    .buyers {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-area: buyers;
+        margin-top: 100px;
+    }
+    .buyers .people {
+        width: 340px;
+        margin: 0;
+    }
+    .buyers .colton {
+        margin-bottom: 80px;
+    }
+    .buyers .irene {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    .buyers .anne {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+}

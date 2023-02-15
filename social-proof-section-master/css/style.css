@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'League Spartan', sans-serif;
+    background-color: #fff;
+    background-image: url(../img/bg-pattern-top-mobile.svg), url(../img/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom left;
+    background-size: 50%, 50%;
+}
+
+main {
+    width: 375px;
+    padding: 70px 30px;
+}
+
+.text {
+    display: grid;
+    gap: 20px;
+}
+.text > h1 {
+    justify-self: center;
+    width: 250px;
+    font-weight: 700;
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+}
+.text > p {
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: hsl(303, 10%, 53%);
+}
+
+.ratings {
+    display: grid;
+    gap: 15px;
+    margin: 40px 0;
+}
+.ratings .reviews {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    padding: 20px;
+}
+.ratings .stars {
+    text-align: center;
+}
+.ratings p {
+    text-align: center;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    padding-top: 10px;
+}
+
+.buyers {
+    display: grid;
+    gap: 15px;
+}
+.buyers .people {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 30px;
+}
+.people .name-and-avatar {
+    display: grid;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.people .name-and-avatar .avatar {
+    width: 42px;
+    border-radius: 50%;
+}
+.name-and-avatar .buyer-name {
+    position: absolute;
+    left: 60px;
+}
+.name-and-avatar .buyer-name h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+.name-and-avatar .buyer-name p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(333, 80%, 67%);
+}
+.people .review-text {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: hsl(300, 24%, 96%);
+}
