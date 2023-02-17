@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    background-color: hsl(216, 50%, 16%);
+    width: 375px;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.images {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.images > img {
+    width: 100%;
+    display: block;
+}
+.images .img-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background-color: hsla(178, 100%, 50%, 0.507);
+    display: none;
+}
+.images .img-overlay img {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.images:hover .img-overlay {
+    display: block;
+}
+
+.text .title a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+.text .title a:hover {
+    color: hsl(178, 100%, 50%);
+}
+.text p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+    line-height: 1.4rem;
+    margin: 25px 0px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.icons .eth, .days {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.eth {
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+.days {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.line {
+    height: 1px; 
+    background-color: hsl(215, 32%, 27%); 
+    border: none;
+    margin: 15px 0;
+}
+
+.author {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.author .avatar {
+    width: 32px;
+    border: 1.7px solid #fff;
+    border-radius: 50%;
+}
+.author p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+}
+.author > p > a {
+    text-decoration: none;
+    color: #fff;
+}
+.author > p > a:hover {
+    color: hsl(178, 100%, 50%);
+}
