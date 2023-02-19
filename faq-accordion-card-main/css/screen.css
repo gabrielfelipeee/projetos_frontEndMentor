@@ -1,0 +1,45 @@
+@media screen and (min-width: 992px) {
+    main {
+        position: relative;
+        display: grid;
+        grid-template-areas: 
+        'images text';
+        justify-content: space-between;
+        align-items: center;
+        width: 900px;
+        margin: 0px;
+        margin-left: 23px;
+        padding: 50px 80px 50px 0px;
+    }
+
+    .images {
+        position: relative;
+        width: 400px;
+        height: 366px;
+        background-image: none;
+        margin: 0;
+    }
+    .img-desktop {
+        overflow: hidden;
+    }
+    .img-desktop .illustration {
+        width: 400px;
+        background: url(../images/bg-pattern-desktop.svg) no-repeat center bottom /contain;
+        padding-bottom: 60px;
+        margin-left: -70px;
+    }
+    .box {
+        width: 150px;
+        position: absolute;
+        top: 115px;
+        left: -73px;
+    }
+
+    .text {
+        grid-area: text;
+        width: 400px;
+    }
+    .text h1 {
+        text-align: left;
+    }
+}
