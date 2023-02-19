@@ -1,0 +1,58 @@
+@media screen and (min-width: 992px) {
+    main {
+        display: grid;
+        grid-template-areas: 
+        'image text';
+        width: 800px;
+    }
+    
+    .info {
+        position: relative;
+        border-radius: 0 10px 10px 0;
+        height: 308px;
+    }
+
+    .image {
+        grid-area: image;
+        border-radius: 10px 0 0 10px;
+        margin: 0;
+        height: 308px;
+    }
+
+    .text {
+        grid-area: text;
+    }
+    .text h1 {
+        font-size: 1.5rem;
+    }
+
+    .author .name-date {
+        margin-left: -210px;
+    }
+
+    .social-media .button-share {
+        display: none;
+    }
+    .social-media p {
+        margin: 0;
+    }
+    .social-media {
+        position: absolute;
+        left: 310px;
+        top: 156px;
+        border-radius: 10px;
+        width: 251px;
+        height: 54px;
+        padding: 10px;
+    }
+    .arrow {
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 20px solid hsl(217, 19%, 35%);
+        position: absolute;
+        bottom: -20px;
+        left: 117px;
+    }
+}
