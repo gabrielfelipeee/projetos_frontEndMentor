@@ -66,6 +66,10 @@ main {
     font-weight: 600;
 }
 
+.arrow:hover {
+    cursor: pointer;
+}
+
 .answers {
     font-size: 1rem;
     font-weight: 400;
