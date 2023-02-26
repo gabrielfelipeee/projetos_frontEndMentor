@@ -184,6 +184,9 @@ function reset() {
     resultTipAmount.innerHTML = '$0.00';
     resultTotal.innerHTML = '$0.00';
 
+    cantBeZero.style.display = 'none';
+    inputPeople.style.outline = '';
+
     fivePercent.style.backgroundColor = '';
     tenPercent.style.backgroundColor = '';
     fifteenPercent.style.backgroundColor = '';
