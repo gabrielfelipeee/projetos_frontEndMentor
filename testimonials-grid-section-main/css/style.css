@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+main {
+    display: grid;
+    gap: 25px;
+    min-width: 320px;
+    max-width: 600px;
+    margin: 50px 0;
+}
+.card {
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    'avatar name'
+    'main-paragraph main-paragraph'
+    'quotations quotations';
+    justify-content: center;
+    align-items: center;
+    padding: 25px 40px;
+    border-radius: 10px;
+}
+.avatar {
+    grid-area: avatar;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.name {
+    grid-area: name;
+    font-size: .9rem;
+    font-weight: 600;
+    position: absolute;
+    left: 20px;
+}
+.name > .verified-graduate {
+    display: block;
+}
+.man {
+    color: hsl(0, 0%, 81%);
+}
+.man > .verified-graduate {
+    color: hsla(0, 0%, 81%, 0.5);
+}
+.woman {
+    color: hsl(219, 29%, 14%);
+}
+.woman > .verified-graduate {
+    color: hsla(217, 30%, 14%, 0.5);
+}
+
+.main-paragraph {
+    grid-area: main-paragraph;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 25px 0;
+}
+.quotations {
+    grid-area: quotations;
+    font-size: .9rem;
+}
+
+.daniel > .main-paragraph, .jonathan > .main-paragraph, .patrick > .main-paragraph {
+    color: hsl(210, 46%, 95%);
+}
+
+.daniel > .quotations, .jonathan > .quotations, .patrick > .quotations {
+    color: hsla(210, 46%, 95%, 0.7);
+}
+
+.jeanette > .main-paragraph, .kira > .main-paragraph {
+    color: hsl(217, 19%, 35%);
+}
+.jeanette > .quotations, .kira > .quotations {
+    color: hsla(217, 19%, 35%, 0.7);
+}
+
+.daniel {
+    background: hsl(263, 55%, 52%) url(../images/bg-pattern-quotation.svg) no-repeat top right 25px ;
+}
+.jonathan {
+    background-color: hsl(217, 19%, 35%);
+}
+.jeanette {
+    background-color: white;
+}
+.patrick {
+    background-color: hsl(219, 29%, 14%);
+}
+.kira {
+    background-color: white;
+}

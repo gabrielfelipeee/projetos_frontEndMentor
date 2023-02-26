@@ -1,0 +1,28 @@
+@media screen and (min-width: 1200px) {
+    main {
+        display: grid;
+        grid-template-areas: 
+        'daniel daniel jonathan kira'
+        'jeanette patrick patrick kira';
+        min-width: 1100px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0;
+    }
+    .daniel {
+        grid-area: daniel;
+        background-position: top right 80px;
+    }
+    .jonathan {
+        grid-area: jonathan;
+    }
+    .jeanette {
+        grid-area: jeanette;
+    }
+    .patrick {
+        grid-area: patrick;
+    }
+    .kira {
+        grid-area: kira;
+    }
+}
