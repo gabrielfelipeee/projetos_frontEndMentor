@@ -19,7 +19,7 @@ body {
 
 header, main {
     min-width: 300px;
-    max-width: 772px;
+    max-width: 100vw - 15px;
 }
 header {
     display: flex;
