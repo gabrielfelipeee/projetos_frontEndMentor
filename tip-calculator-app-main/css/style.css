@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+header, main {
+    min-width: 300px;
+    max-width: 772px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+main {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+main .data .input-group > input {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    text-align: right;
+    padding: 10px 20px;
+    border: none;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+
+}
+input {
+    border-radius: 5px;
+}
+input:focus {
+    outline: 2px solid hsl(172, 67%, 45%);
+}
+
+.input-group .cant-be-zero { /* people <= 0 */
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: .8rem;
+    font-weight: 400;
+    color: red;
+}
+.input-group {
+    position: relative;
+}
+.input-group #bill {
+    background: hsl(189, 41%, 97%) url(../images/icon-dollar.svg) no-repeat left 20px center /auto;
+}
+.input-group #number-people {
+    background: hsl(189, 41%, 97%) url(../images/icon-person.svg) no-repeat left 20px center /auto;
+}
+.input-group label {
+    display: block;
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 5px;
+}
+
+.percentage-value {
+    margin-bottom: 40px;
+}
+.percentage-value .select {
+    color: hsl(186, 14%, 43%);
+    margin: 40px 0 10px 0;
+}
+.percentage-value .percentage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.percentage-value .percentage > .Xpercent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: hsl(183, 100%, 15%);
+    color: #fff;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition-property: background, color;
+    transition-duration: 1s;
+}
+.percentage-value .percentage > .Xpercent:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+
+    transition-property: background, color;
+    transition-duration: 1s;
+}
+.custom-percentage {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: right;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.result {
+    background-color: hsl(183, 100%, 15%);
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.title {
+    color: hsl(189, 41%, 97%);
+    margin-bottom: 20px;
+    height: 50px;
+}
+.title > span {
+    display: block;
+    color: hsl(184, 14%, 56%);
+
+}
+.result > .tip-amount, .total {
+    display: flex;
+    justify-content: space-between;
+
+}
+.result-tip-amount, .result-total {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 2rem;
+    color: hsl(172, 67%, 45%);
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+
+    transition-property: background;
+    transition-duration: .5s;
+}
+.reset:hover {
+    background-color: hsl(185, 41%, 84%);
+
+    transition-property: background;
+    transition-duration: .5s;
+}
