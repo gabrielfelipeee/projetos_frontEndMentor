@@ -21,7 +21,7 @@ The designs were created to the following widths:
 
 ## Typography
 
-### Body Copy
+### Body Copy #00252E
 
 - Font size: 18px
 

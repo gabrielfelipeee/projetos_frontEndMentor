@@ -8,7 +8,6 @@
 body {
     display: grid;
     justify-content: center;
-    min-height: 100vh;
     background-color: #232323;
 }
 
@@ -22,6 +21,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 25px;
+    margin-bottom: -1px;
     background-color: hsl(193, 100%, 96%);
 }
 header > .logo {
@@ -45,6 +45,7 @@ main .introduction {
     gap: 25px;
     padding: 40px;
     background: hsl(193, 100%, 96%) url(../images/bg-hero-mobile.svg) no-repeat top center;
+    margin-bottom: -1px;
 }
 .introduction > h1 {
     font: 600 2rem 'Poppins', sans-serif;
@@ -72,7 +73,7 @@ main .introduction {
 main .cards {
     display: grid;
     gap: 30px;
-    background-color: red;
+    background-color: #fff9f9;
     padding-top: 100px;
     padding: 80px 25px 0px 25px;
 }
@@ -110,19 +111,99 @@ main .card {
     margin-top: 100px;
     margin-bottom: -80px;
     border-radius: 20px;
+    z-index: 1;
 }
 .community h2 {
     margin-bottom: 20px;
     text-align: center;
-    font: 600 1.5rem 'Poppins', sans-serif;
+    font: 600 1rem 'Poppins', sans-serif;
     color: hsl(192, 100%, 9%);
     text-align: center;
 }
 
 footer {
     background-color: hsl(192, 100%, 9%);
+    padding: 25px;
+    z-index: 0;
 }
 .logo-footer {
-    margin-top: 100px;
+    width: 300px;
+    color: #000000;
+}
+
+.contacts {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    margin: 160px 0 80px 0;
+}
+.card-contact {
+    display: flex;
+    gap: 40px;
+    justify-content: start;
+    align-items: start;
+}
+.card-contact > p {
+    font: 400 1.3rem 'Open Sans', sans-serif;
+    color: hsl(193, 100%, 96%);
+}
+
+
+.info ul {
+    display: grid;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 80px;
+}
+ul > li > a {
+    text-decoration: none;
+    font: 400 1.3rem 'Open Sans', sans-serif;
+    color: hsl(193, 100%, 96%);
+}
+ul > li > a:hover {
+    text-decoration: underline;
+}
+
+.social-and-copy {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.social-media {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.social-media > a {
     color: #fff;
+
+    transition-property: color;
+    transition-duration: .5s;
+}
+.social-media > a:hover {
+    color: hsl(322, 100%, 66%);
+
+    transition-property: color;
+    transition-duration: .5s;
+}
+
+.social-media > a > ion-icon {
+    font-size: 25px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+
+    transition-property: border-color;
+    transition-duration: .5s;
+}
+.social-media > a > ion-icon:hover {
+    border-color: hsl(322, 100%, 66%);
+
+    transition-property: border-color;
+    transition-duration: .5s;
+}
+.copy {
+    font: 600 .9rem 'Poppins', sans-serif;
+    margin-top: 20px;
+    color: hsl(193, 100%, 96%);
 }
