@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #232323;
+}
+
+header, main, footer {
+    min-width: 375px;
+    max-width: 768px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: hsl(193, 100%, 96%);
+}
+header > .logo {
+    width: 150px;
+}
+header > .try-it-free {
+    text-decoration: none;
+    background-color: #fff;
+    font: 700 1rem 'Open Sans', sans-serif;
+    color: hsl(192, 100%, 9%);
+    padding: 8px 25px;
+    border-radius: 50px;
+}
+header > .try-it-free:hover {
+    color: hsl(208, 11%, 55%);
+}
+
+main .introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 40px;
+    background: hsl(193, 100%, 96%) url(../images/bg-hero-mobile.svg) no-repeat top center;
+}
+.introduction > h1 {
+    font: 600 2rem 'Poppins', sans-serif;
+    text-align: center;
+    color: hsl(192, 100%, 9%);
+}
+.introduction > p {
+    font: 1rem 400 'Open Sans', sans-serif;
+    text-align: center;
+    color: hsl(208, 11%, 55%);
+}
+.get-started {
+    text-decoration: none;
+    font: 700 1rem 'open sans', sans-serif;
+    color: #fff;
+    background-color: hsl(322, 100%, 66%);
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 200.58px;
+    margin: auto;
+}
+.get-started:hover {
+    background-color: hsla(322, 100%, 66%, 0.7);
+}
+main .cards {
+    display: grid;
+    gap: 30px;
+    background-color: red;
+    padding-top: 100px;
+    padding: 80px 25px 0px 25px;
+}
+main .card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #fff;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+.card .image {
+    width: 100%;
+    margin: auto;
+}
+.card > h2 {
+    font: 600 1.5rem 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+    text-align: center;
+}
+.card > p {
+    font: 400 1rem 'open sans', sans-serif;
+    color: hsl(208, 11%, 55%);
+    text-align: center;
+    line-height: 1.6rem;
+    margin: auto;
+}
+
+.community {
+    display: grid;
+    justify-content: center;
+    background-color: white;
+    padding: 50px 20px;
+    margin-top: 100px;
+    margin-bottom: -80px;
+    border-radius: 20px;
+}
+.community h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font: 600 1.5rem 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+    text-align: center;
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+}
+.logo-footer {
+    margin-top: 100px;
+    color: #fff;
+}
