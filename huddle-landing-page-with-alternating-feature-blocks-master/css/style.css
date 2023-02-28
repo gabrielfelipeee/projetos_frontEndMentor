@@ -34,9 +34,13 @@ header > .try-it-free {
     color: hsl(192, 100%, 9%);
     padding: 8px 25px;
     border-radius: 50px;
+    transition-property: color;
+    transition-duration: .5s;
 }
 header > .try-it-free:hover {
     color: hsl(208, 11%, 55%);
+    transition-property: color;
+    transition-duration: .5s;
 }
 
 main .introduction {
@@ -66,9 +70,14 @@ main .introduction {
     border-radius: 50px;
     width: 200.58px;
     margin: auto;
+
+    transition-property: background-color;
+    transition-duration: .5s;
 }
 .get-started:hover {
     background-color: hsla(322, 100%, 66%, 0.7);
+    transition-property: background-color;
+    animation-duration: .5s;
 }
 main .cards {
     display: grid;
@@ -127,7 +136,7 @@ footer {
     z-index: 0;
 }
 .logo-footer {
-    width: 300px;
+    width: 200px;
     color: #000000;
 }
 
