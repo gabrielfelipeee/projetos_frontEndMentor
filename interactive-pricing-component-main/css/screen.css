@@ -1,0 +1,131 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header, main {
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    header, main {
+        width: 80vw;
+    }
+
+    header > h1 {
+        font-size: 2rem;
+    }
+    header > p {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+    main {
+        display: grid;
+        grid-template-areas:
+        'price-per-views price-per-views'
+        'billing billing'
+        'line line'
+        'benefits start';
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 100px;
+    }
+    main .price-per-view {
+        display: grid;
+        grid-template-areas:
+        'pageviews price'
+        'range-views range-views';
+        align-items: center;
+        justify-content: space-between;
+        grid-area: price-per-views;
+    }
+    .pageviews {
+        grid-area: pageviews;
+    }
+    .price {
+        grid-area: price;
+    }
+    #range-views {
+        grid-area: range-views;
+        width: 100%;
+    }
+
+    main .billing {
+        grid-area: billing;
+        font-size: .8rem;
+    }
+    .yearly .discount::after {
+        content: ' discount';
+    }
+
+    .benefits {
+        grid-area: benefits;
+        text-align: left;
+        margin: 0;
+    }
+
+    .start {
+        grid-area: start;
+        margin-top: 22px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header, main {
+        width: 960px;
+    }
+
+    header > h1 {
+        font-size: 2rem;
+    }
+    header > p {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+    main {
+        display: grid;
+        grid-template-areas:
+        'price-per-views price-per-views'
+        'billing billing'
+        'line line'
+        'benefits start';
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 100px;
+    }
+    main .price-per-view {
+        display: grid;
+        grid-template-areas:
+        'pageviews price'
+        'range-views range-views';
+        align-items: center;
+        justify-content: space-between;
+        grid-area: price-per-views;
+    }
+    .pageviews {
+        grid-area: pageviews;
+    }
+    .price {
+        grid-area: price;
+    }
+    #range-views {
+        grid-area: range-views;
+        width: 100%;
+    }
+
+    main .billing {
+        grid-area: billing;
+        font-size: .8rem;
+    }
+    .yearly .discount::after {
+        content: ' discount';
+    }
+
+    .benefits {
+        grid-area: benefits;
+        text-align: left;
+        margin: 0;
+    }
+
+    .start {
+        grid-area: start;
+        margin-top: 22px;
+    }
+}
