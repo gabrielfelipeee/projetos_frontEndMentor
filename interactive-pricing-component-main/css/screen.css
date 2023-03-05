@@ -1,12 +1,6 @@
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
     header, main {
-        width: 80vw;
-    }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    header, main {
-        width: 80vw;
+        width: 65vw;
     }
 
     header > h1 {
@@ -25,13 +19,13 @@
         'benefits start';
         align-items: center;
         justify-content: space-between;
-        padding: 50px 100px;
+        padding: 50px;
     }
     main .price-per-view {
         display: grid;
         grid-template-areas:
         'pageviews price'
-        'range-views range-views';
+        'label label';
         align-items: center;
         justify-content: space-between;
         grid-area: price-per-views;
@@ -42,9 +36,9 @@
     .price {
         grid-area: price;
     }
-    #range-views {
-        grid-area: range-views;
-        width: 100%;
+
+    label {
+        grid-area: label;
     }
 
     main .billing {
@@ -69,7 +63,7 @@
 
 @media screen and (min-width: 1200px) {
     header, main {
-        width: 960px;
+        width: 800px;
     }
 
     header > h1 {
@@ -94,7 +88,7 @@
         display: grid;
         grid-template-areas:
         'pageviews price'
-        'range-views range-views';
+        'label label';
         align-items: center;
         justify-content: space-between;
         grid-area: price-per-views;
@@ -105,9 +99,9 @@
     .price {
         grid-area: price;
     }
-    #range-views {
-        grid-area: range-views;
-        width: 100%;
+
+    label {
+        grid-area: label;
     }
 
     main .billing {
