@@ -1,0 +1,47 @@
+:root {
+    --background-slide-button-light: hsl(230, 22%, 74%);
+    --background-slide-button-dark: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    --white: #fff;
+}
+
+header .theme {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    color: var(--color-text);
+
+}
+
+.slide-button {
+    width: 56px;
+    height: 28px;
+    background-image: var(--background-slide-button-dark);
+    border-radius: 999px;
+    position: relative;
+    cursor: pointer;
+}
+
+button {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--background);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+
+
+/* Button theme light */
+
+.slide-button-light {
+    background: var(--background-slide-button-light);
+}
+
+.button-light {
+    background-color: var(--white);
+    left: 33px;
+}
