@@ -40,6 +40,9 @@ button {
 .slide-button-light {
     background: var(--background-slide-button-light);
 }
+.slide-button-light:hover {
+    background: var(--background-slide-button-dark)
+}
 
 .button-light {
     background-color: var(--white);

@@ -38,17 +38,26 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 17px);
     background-color: var(--background);
     font-family: 'Inter', sans-serif;
     padding: 20px;
 }
 
-header > h1  {
+header, main {
+    width: 100%;
+}
+
+header .text > h1  {
     font-size: 1.7rem;
     color: var(--color-text-data_title);
     margin-bottom: 3px;
 }
-header > .total {
+header .text .total {
     font-weight: 700;
     color: var(--color-text);
 }
@@ -143,13 +152,16 @@ main .area-followers {
 
 .area-overview {
     display: grid;
-    gap: 20px;
     margin-bottom: 40px;
 }
-
+.area-overview .cards {
+    display: grid;
+    gap: 20px;
+}
 .area-overview h2 {
     font-weight: 700;
     color: var(--color-overview-title);
+    margin-bottom: 20px;
 }
 
 .area-overview .card-overview {
